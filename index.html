@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #d2d2d2;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          ),
+          repeating-linear-gradient(
+            to bottom,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          );
+      }
+
+      body::before {
+        position: absolute;
+        width: min(1400px, 90vw);
+        top: 10%;
+        left: 50%;
+        height: 90%;
+        transform: translateX(-50%);
+        content: "";
+        background-image: url(images/bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        pointer-events: none;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="slider" style="--quantity: 10">
+        <div class="item" style="--position: 1">
+          <img src="img/p.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 2">
+          <img src="https://images.unsplash.com/photo-1731946660299-8f091eb1caee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="item" style="--position: 3">
+          <img src="https://images.unsplash.com/photo-1720048169970-9c651cf17ccd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="item" style="--position: 4">
+          <img src="https://plus.unsplash.com/premium_photo-1675024298717-02d612d9cc82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8SVR8ZW58MHx8MHx8fDA%3D" alt="" />
+        </div>
+        <div class="item" style="--position: 5">
+          <img src="https://plus.unsplash.com/premium_photo-1661765192121-f398fd1e8fa2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fElUfGVufDB8fDB8fHww" alt="" />
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="https://plus.unsplash.com/premium_photo-1675024226990-36dcb7252c62?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fElUfGVufDB8fDB8fHww" alt="" />
+        </div>
+        <div class="item" style="--position: 7">
+          <img src="https://images.unsplash.com/photo-1573496546735-c274b1fd186b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="item" style="--position: 8">
+          <img src="https://images.unsplash.com/photo-1573496546735-c274b1fd186b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="item" style="--position: 9">
+          <img src="https://images.unsplash.com/photo-1573495612890-430e48b164df?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        </div>
+        <div class="item" style="--position: 10">
+          <img src="images/dragon_10.jpg" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <h1 data-content="Deaw">Deaw</h1>
+        <div class="author">
+          <h4>Thepprathan Singsin</h4>
+          <p class="box-1"><b>Web Design</b></p>
+          <p ><b> แผนก คอมพิวเตอร์ธุรกิจ </b></p>
+        </div>
+        <div class="model"></div>
+      </div>
+    </div>
+  </body>
+</html>
