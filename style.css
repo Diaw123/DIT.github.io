@@ -94,6 +94,9 @@
     z-index: 1;
 }
 @media screen and (max-width: 1023px) {
+    .box-1 {
+        margin: 0px 10px 0px 0px;
+    }
     .banner .slider{
         width: 160px;
         height: 200px;
